@@ -7,7 +7,6 @@ cursor: help;
 
 </style>
 
-
 <%= form_for @deposit, :html => {:multipart => true} do |f| %>
 <%= f.hidden_field :day , :value => 30 %>
 <%= f.hidden_field :no_of_days_in_year , :value => 360 %>
@@ -18,7 +17,6 @@ cursor: help;
   <% end %>
   </ul>
  <% end %>
-
 
 <h4><%= f.label :customer_name, class:'required' %><h4>
 <h4><%= f.text_field :customer_name, :placeholder => " customer name" %></h4>

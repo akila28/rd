@@ -10,7 +10,7 @@ html {
 
 body {
   padding-top: 60px;
-  background: url(/assets/d.jpg) no-repeat center center fixed; 
+  background: url(/assets/pic.jpg) no-repeat center center fixed; 
   background-size: 100%;
 }
 

@@ -4,11 +4,7 @@ content: " *";
 color: red;
 cursor: help;
 }
-h4
-{
-font-weight: bold;
-color: red;
-}
+
 </style>
 
 
