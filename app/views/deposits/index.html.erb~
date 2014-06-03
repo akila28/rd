@@ -1,0 +1,18 @@
+<div> <table cellpadding = "5px" cellspacing = "5px" width = "100%" class="table table-hover">
+ 
+  <tr>
+    <th><strong>DEPOSIT AMOUNT</strong></th>
+    <th><strong>NO OF YEARS</strong></th>
+    <th><strong>INTEREST</strong></th>
+    <th><strong>MATURITY AMOUNT</strong></th>
+  </tr>
+
+  <% @deposits.each do |deposit| %>
+  <tr>
+      <td> <%= deposit.amount %></td>
+      <td> <%= deposit.no_of_year %></td>
+      <td> <%= deposit.interest_rate %></td>
+      <td> <%= deposit.Final %></td>
+  </tr>
+  <% end %>
+ </table>

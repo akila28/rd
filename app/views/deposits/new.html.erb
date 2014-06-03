@@ -1,0 +1,40 @@
+<style>
+label.required:after{
+content: " *";
+color: red;
+cursor: help;
+}
+
+</style>
+
+
+<%= form_for @deposit, :html => {:multipart => true} do |f| %>
+<%= f.hidden_field :day , :value => 30 %>
+<%= f.hidden_field :no_of_days_in_year , :value => 360 %>
+  <% if @deposit.errors.any? %>  
+  <ul>
+  <% @deposit.errors.full_messages.each do |error| %>
+  <li><strong><%= error %></strong></li>
+  <% end %>
+  </ul>
+ <% end %>
+
+
+<h4><%= f.label :customer_name, class:'required' %><h4>
+<h4><%= f.text_field :customer_name, :placeholder => " customer name" %></h4>
+
+<h4><%= f.label :date_of_birth, class:'required' %>
+<%= f.text_field :date_of_birth, :placeholder => "yyyy-mm-dd" %></h4>
+
+<h4><%= f.label :amount, class:'required' %>
+<%= f.text_field :amount %></h4>
+
+<h4><%= f.label :interest_rate, class:'required' %>
+<%= f.select(:interest_rate, options_for_select([['',''],['9%', '9'], ['9.5%', '9.5'], ['10%','10'], ['10.5%','10.5'], ['11%','11'], ['11.5%','11.5'], ['11.75%','11.75']]))%></h4>
+
+<h4><%= f.label :no_of_year, class:'required' %>
+<%= f.select(:no_of_year, options_for_select([['',''],['1','1'], ['2','2'],['3','3'],['4','4'],['5','5']]))%></h4>
+
+<h4><fieldset class="form-actions"> <%= f.submit "Total", class: "btn btn-primary" %></field></h4>
+<% end %>
+

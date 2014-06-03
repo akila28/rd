@@ -1,0 +1,89 @@
+@import "bootstrap";
+
+$grayMediumLight: #eaeaea;
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+  background: url(/assets/d.jpg) no-repeat center center fixed; 
+  background-size: 100%;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+  
+/* table */
+
+th{
+   background-color:#C9BE62;
+   border:3px solid #827839;
+   color:#6A5ACD
+}
+
+td{
+   border:3px solid #827839;
+}
+
+/* homepage*/
+h5,h4,h3,h2,h1
+{
+font-family: Serif;
+font-weight: bold;
+line-height: 30px;
+color: info;
+}
+ 
+/* h1 */
+h1
+{
+color: #228B22;
+}
+
+/* h4 */
+h4
+{
+color: #B22222;
+}
+
+
+/* label */
+
+

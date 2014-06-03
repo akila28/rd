@@ -1,0 +1,7 @@
+class ChangeTotal11FormatInDeposits < ActiveRecord::Migration
+  def up
+  end
+
+  def down
+  end
+end
