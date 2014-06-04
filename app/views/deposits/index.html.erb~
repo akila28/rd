@@ -16,8 +16,8 @@
       <td> <%= deposit.no_of_year %></td>
       <td> <%= deposit.interest_rate %></td>
       <td> <%= deposit.Final %></td>
-      <td> <%= link_to "Delete",deposit_path(deposit),class: "btn btn-danger",
-      method: :delete, confirm: "Are You Sure?" %></td>
+     
   </tr>
   <% end %>
  </table>
+<%= will_paginate @deposits %>
