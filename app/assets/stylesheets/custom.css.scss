@@ -10,9 +10,8 @@ html {
 
 body {
   padding-top: 60px;
-  background: url(/assets/pic.jpg) no-repeat center center fixed; 
-  background-size: 100%;
-}
+  background:#FAEBD7;
+ }
 
 section {
   overflow: auto;
@@ -53,13 +52,13 @@ textarea {
 /* table */
 
 th{
-   background-color:#C9BE62;
-   border:3px solid #827839;
-   color:#6A5ACD
+   background-color:#A0522D;
+   border:1px solid #827839;
+   color:white;
 }
 
 td{
-   border:3px solid #827839;
+   border:1px solid #827839;
 }
 
 /* homepage*/
