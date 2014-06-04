@@ -27,6 +27,6 @@ def destroy
   @deposit = Deposit.find(params[:id])
   @deposit.destroy
   flash[:notice] = "customer has been deleted"
-  redirect_to deposits_path
+  redirect_to deposit_path
 end
 end
