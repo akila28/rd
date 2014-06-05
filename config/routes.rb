@@ -1,5 +1,7 @@
 RdNew::Application.routes.draw do
 resources :deposits
+  get "deposits/delete"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
