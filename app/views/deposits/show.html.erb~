@@ -1,12 +1,23 @@
+<style>
+.jumbotron{
+    width:70%;
+    height: 290px;
+    background-color:#FFFFFF;
+    padding:1px;
+    margin:1px;
+    opacity: 1.9;
+    text-align: left;
+}
+</style>
 <h2><strong>CUSTOMER DETAILS</strong></h2>
-<div class="jumbotron">
-<div class="container">
-<h5><strong>CUSTOMER NAME :</strong> <%= @deposit.customer_name %></h5>
-<h5><strong>DATE OF BIRTH :</strong> <%= @deposit.date_of_birth %></h5>
-<h5><strong>AGE :</strong> <%= "#{Date.today.year - @deposit.date_of_birth.year}" %></h5> 
-<h5><strong>MATURITY AMOUNT :</strong> <%= @deposit.Final %></h5>
-<h5><strong>INTEREST :</strong> <%= @deposit.interest_rate %></h5>
-<h5><strong>NO OF YEARS : </strong><%= @deposit.no_of_year %></h5>
-<h5><strong>DEPOSIT AMOUNT :</strong> <%= @deposit.amount %></h5>
-  </div>
-    </div>
+ <div class="jumbotron">
+   <div class="container">
+	<h5><strong>CUSTOMER NAME :</strong> <%= @deposit.customer_name %></h5>
+	<h5><strong>DATE OF BIRTH :</strong> <%= @deposit.date_of_birth %></h5>
+	<h5><strong>AGE :</strong> <%= "#{Date.today.year - @deposit.date_of_birth.year}" %></h5> 
+	<h5><strong>MATURITY AMOUNT :</strong> <%= @deposit.Final %></h5>
+	<h5><strong>INTEREST :</strong> <%= @deposit.interest_rate %></h5>
+	<h5><strong>NO OF YEARS : </strong><%= @deposit.no_of_year %></h5>
+	<h5><strong>DEPOSIT AMOUNT :</strong> <%= @deposit.amount %></h5>
+   </div>
+</div>

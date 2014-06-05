@@ -54,7 +54,7 @@ textarea {
 th{
    background-color:#A0522D;
    border:1px solid #827839;
-   color:white
+   color:white;
 }
 
 td{
@@ -81,5 +81,28 @@ h4
 {
 color: #B22222;
 }
+
+.marquee-container {
+    width: 18em;
+    height: 8em;
+    margin: 1em auto;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.marquee {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+
 
 
